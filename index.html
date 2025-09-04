@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__container">
+        <div class="logo">
+          <a href="#">LOGO</a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#faq">How it works</a></li>
+            <li><a href="#hero">About</a></li>
+            <li><a href="#steps">Instructions</a></li>
+            <li><a href="#footer">Accounts</a></li>
+            <li><a href="#testimonial">Platforms</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+            <li class="mobile-only"><button class="signin-btn signin-btn--mobile">Sign in for free</button></li>
+            <li class="mobile-only">
+              <div class="lang-selector lang-selector--mobile">
+                <button class="lang-btn">
+                  <span class="lang-text">EN</span>
+                  <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <ul class="lang-dropdown">
+                  <li data-lang="en">English</li>
+                  <li data-lang="ua">Українська</li>
+                  <li data-lang="pl">Polski</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <div class="lang-selector desktop-only">
+            <button class="lang-btn">
+              <span class="lang-text">EN</span>
+              <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="lang-dropdown">
+              <li data-lang="en">English</li>
+              <li data-lang="ua">Українська</li>
+              <li data-lang="pl">Polski</li>
+            </ul>
+          </div>
+          <button class="signin-btn tablet-desktop-only">Sign in for free</button>
+        </div>
+
+        <button class="burger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">Trade everywhere.<br>Invest here!</h1>
+          <p class="hero__text">We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere.</p>
+          <button class="hero__btn">Start trading</button>
+          <picture class="hero__image">
+            <source srcset="/images/hero_desktop.png" media="(min-width: 1440px)" />
+            <source srcset="/images/hero_tablet.png" media="(min-width: 768px)" />
+            <img src="/images/hero_mobile.png" alt="Quantum Illustration" />
+          </picture>
+        </div>
+      </section>
+      <section class="steps" id="steps">
+        <div class="steps__container">
+          <h2 class="steps__title">
+            <span class="steps__title--getting">Getting </span>
+            <span class="steps__title--started">Started </span>
+            <span class="steps__title--is">Is </span>
+            <span class="steps__title--easy">Fast & Easy</span>
+          </h2>
+          <div class="steps__list">
+              <div class="step left">
+                <div class="step__number">01.</div>
+                <h3 class="step__title">Register</h3>
+                <p class="step__text">Complete the simple registration to get your trading credentials.</p>
+              </div>
+              <div class="step right">
+                <div class="step__number">02.</div>
+                <h3 class="step__title">Verification</h3>
+                <p class="step__text">Big Invest is required to verify your identity, upload your documents quickly and get approved in minutes.</p>
+              </div>
+              <div class="step left">
+                <div class="step__number">03.</div>
+                <h3 class="step__title">Deposit funds</h3>
+                <p class="step__text">Big Invest accepts credit cards and bank wires. Just use the secure deposit form and follow the steps.</p>
+              </div>
+              <div class="step right">
+                <div class="step__number">04.</div>
+                <h3 class="step__title">Start Trading</h3>
+                <p class="step__text">Once your deposit has been credited, you can begin trading instantly. In no time you will see profits rolling into your account.</p>
+              </div>
+              <svg class="steps__lines"></svg>
+            </div>
+        </div>
+      </section>
+      <section class="testimonial" id="testimonial">
+        <div class="testimonial__container">
+          <h2 class="testimonial__title">
+            <span class="testimonial__title--people">People love </span>
+            <span class="testimonial__title--big-invest">Big Invest</span>
+            <span class="testimonial__title--big">Big </span>
+            <span class="testimonial__title--invest">Invest</span>
+          </h2>
+
+          <div class="testimonial__slider">
+            <div class="testimonial__slide">
+              <div class="testimonial__header">
+                <img id="avatar" src="" alt="Avatar" class="testimonial__photo" />
+                <div class="testimonial__info">
+                  <h3 id="name" class="testimonial__name"></h3>
+                  <p id="role" class="testimonial__role"></p>
+                </div>
+              </div>
+              <div class="testimonial__content">
+                <svg class="testimonial__quote" width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.373 0.5V12.7568C14.373 17.2341 13.1449 20.7926 10.9219 23.4277C8.70052 26.0609 5.52449 27.7261 1.71094 28.4902L1.11328 28.6104V21.8262L1.49707 21.7354C3.69465 21.2115 5.1912 20.1767 6.14551 18.8096C7.02517 17.5493 7.47067 15.9661 7.53906 14.1533H0.5V0.5H14.373ZM34.5 0.5V12.7568C34.4999 17.2316 33.2986 20.7904 31.0879 23.4268C28.8784 26.0616 25.7013 27.7263 21.8369 28.4902L21.2402 28.6084V21.8262L21.624 21.7354C23.8216 21.2115 25.3182 20.1767 26.2725 18.8096C27.1521 17.5493 27.5976 15.9661 27.666 14.1533H20.627V0.5H34.5Z" stroke="#6248FF" />
+                </svg>
+                <p id="quote" class="testimonial__text"></p>
+              </div>
+              <span id="counter" class="testimonial__pagination"></span>
+            </div>
+          </div>
+
+          <div class="testimonial__nav">
+            <button id="prevBtn" class="testimonial__arrow testimonial__arrow--prev" disabled>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1586 7.17621C14.3133 7.02005 14.4 6.80917 14.4 6.58941C14.4 6.36965 14.3133 6.15877 14.1586 6.00261C14.0827 5.92551 13.9922 5.86428 13.8924 5.82249C13.7926 5.7807 13.6854 5.75918 13.5772 5.75918C13.469 5.75918 13.3619 5.7807 13.2621 5.82249C13.1623 5.86428 13.0718 5.92551 12.9958 6.00261L8.39983 10.6922C8.24543 10.8487 8.15885 11.0598 8.15885 11.2796C8.15885 11.4995 8.24543 11.7105 8.39983 11.867L12.9958 16.5566C13.0718 16.6337 13.1623 16.6949 13.2621 16.7367C13.3619 16.7785 13.469 16.8 13.5772 16.8C13.6854 16.8 13.7926 16.7785 13.8924 16.7367C13.9922 16.6949 14.0827 16.6337 14.1586 16.5566C14.3133 16.4005 14.4 16.1896 14.4 15.9698C14.4 15.7501 14.3133 15.5392 14.1586 15.383L10.3894 11.2778L14.1586 7.17621Z" fill="black" />
+              </svg>
+            </button>
+            <button id="nextBtn" class="testimonial__arrow testimonial__arrow--next">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.84134 7.17621C9.68671 7.02005 9.59998 6.80917 9.59998 6.58941C9.59998 6.36965 9.68671 6.15877 9.84134 6.00261C9.91726 5.92551 10.0078 5.86428 10.1076 5.82249C10.2074 5.7807 10.3145 5.75918 10.4227 5.75918C10.5309 5.75918 10.6381 5.7807 10.7379 5.82249C10.8377 5.86428 10.9282 5.92551 11.0041 6.00261L15.6001 10.6922C15.7545 10.8487 15.8411 11.0598 15.8411 11.2796C15.8411 11.4995 15.7545 11.7105 15.6001 11.867L11.0041 16.5566C10.9282 16.6337 10.8377 16.6949 10.7379 16.7367C10.6381 16.7785 10.5309 16.8 10.4227 16.8C10.3145 16.8 10.2074 16.7785 10.1076 16.7367C10.0078 16.6949 9.91726 16.6337 9.84134 16.5566C9.68671 16.4005 9.59998 16.1896 9.59998 15.9698C9.59998 15.7501 9.68671 15.5392 9.84134 15.383L13.6105 11.2778L9.84134 7.17621Z" fill="black" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="faq__container">
+          <h2 class="faq__title">
+            <span class="faq__title--fre">Frequently </span>
+            <span class="faq__title--ask">asked </span>
+            <span class="faq__title--que">questions</span>
+          </h2>
+          <div class="faq__cards">
+            <div class="faq__card">
+              <div class="faq__question">
+                <h3 class="faq__question-text">How do I change my details?</h3>
+                <button class="faq__toggle" aria-label="Toggle answer">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C9.26522 0 9.51957 0.105357 9.70711 0.292893C9.89464 0.48043 10 0.734784 10 1V9C10 9.26522 9.89464 9.51957 9.70711 9.70711C9.51957 9.89464 9.26522 10 9 10H1C0.734784 10 0.48043 9.89464 0.292893 9.70711C0.105357 9.51957 0 9.26522 0 9C0 8.73478 0.105357 8.48043 0.292893 8.29289C0.48043 8.10536 0.734784 8 1 8H8V1C8 0.734784 8.10536 0.48043 8.29289 0.292893C8.48043 0.105357 8.73478 0 9 0Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 9C8 8.73478 8.10536 8.48043 8.29289 8.29289C8.48043 8.10536 8.73478 8 9 8H17C17.2652 8 17.5196 8.10536 17.7071 8.29289C17.8946 8.48043 18 8.73478 18 9C18 9.26522 17.8946 9.51957 17.7071 9.70711C17.5196 9.89464 17.2652 10 17 10H10V17C10 17.2652 9.89464 17.5196 9.70711 17.7071C9.51957 17.8946 9.26522 18 9 18C8.73478 18 8.48043 17.8946 8.29289 17.7071C8.10536 17.5196 8 17.2652 8 17V9Z" fill="black" />
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__answer">
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="faq__card">
+              <div class="faq__question">
+                <h3 class="faq__question-text">What platforms will I be able to use?</h3>
+                <button class="faq__toggle" aria-label="Toggle answer">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C9.26522 0 9.51957 0.105357 9.70711 0.292893C9.89464 0.48043 10 0.734784 10 1V9C10 9.26522 9.89464 9.51957 9.70711 9.70711C9.51957 9.89464 9.26522 10 9 10H1C0.734784 10 0.48043 9.89464 0.292893 9.70711C0.105357 9.51957 0 9.26522 0 9C0 8.73478 0.105357 8.48043 0.292893 8.29289C0.48043 8.10536 0.734784 8 1 8H8V1C8 0.734784 8.10536 0.48043 8.29289 0.292893C8.48043 0.105357 8.73478 0 9 0Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 9C8 8.73478 8.10536 8.48043 8.29289 8.29289C8.48043 8.10536 8.73478 8 9 8H17C17.2652 8 17.5196 8.10536 17.7071 8.29289C17.8946 8.48043 18 8.73478 18 9C18 9.26522 17.8946 9.51957 17.7071 9.70711C17.5196 9.89464 17.2652 10 17 10H10V17C10 17.2652 9.89464 17.5196 9.70711 17.7071C9.51957 17.8946 9.26522 18 9 18C8.73478 18 8.48043 17.8946 8.29289 17.7071C8.10536 17.5196 8 17.2652 8 17V9Z" fill="black" />
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__answer">
+                We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!
+              </p>
+            </div>
+            <div class="faq__card">
+              <div class="faq__question">
+                <h3 class="faq__question-text">How do I change my details?</h3>
+                <button class="faq__toggle" aria-label="Toggle answer">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C9.26522 0 9.51957 0.105357 9.70711 0.292893C9.89464 0.48043 10 0.734784 10 1V9C10 9.26522 9.89464 9.51957 9.70711 9.70711C9.51957 9.89464 9.26522 10 9 10H1C0.734784 10 0.48043 9.89464 0.292893 9.70711C0.105357 9.51957 0 9.26522 0 9C0 8.73478 0.105357 8.48043 0.292893 8.29289C0.48043 8.10536 0.734784 8 1 8H8V1C8 0.734784 8.10536 0.48043 8.29289 0.292893C8.48043 0.105357 8.73478 0 9 0Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 9C8 8.73478 8.10536 8.48043 8.29289 8.29289C8.48043 8.10536 8.73478 8 9 8H17C17.2652 8 17.5196 8.10536 17.7071 8.29289C17.8946 8.48043 18 8.73478 18 9C18 9.26522 17.8946 9.51957 17.7071 9.70711C17.5196 9.89464 17.2652 10 17 10H10V17C10 17.2652 9.89464 17.5196 9.70711 17.7071C9.51957 17.8946 9.26522 18 9 18C8.73478 18 8.48043 17.8946 8.29289 17.7071C8.10536 17.5196 8 17.2652 8 17V9Z" fill="black" />
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__answer">
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="faq__card">
+              <div class="faq__question">
+                <h3 class="faq__question-text">How do I change my details?</h3>
+                <button class="faq__toggle" aria-label="Toggle answer">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C9.26522 0 9.51957 0.105357 9.70711 0.292893C9.89464 0.48043 10 0.734784 10 1V9C10 9.26522 9.89464 9.51957 9.70711 9.70711C9.51957 9.89464 9.26522 10 9 10H1C0.734784 10 0.48043 9.89464 0.292893 9.70711C0.105357 9.51957 0 9.26522 0 9C0 8.73478 0.105357 8.48043 0.292893 8.29289C0.48043 8.10536 0.734784 8 1 8H8V1C8 0.734784 8.10536 0.48043 8.29289 0.292893C8.48043 0.105357 8.73478 0 9 0Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 9C8 8.73478 8.10536 8.48043 8.29289 8.29289C8.48043 8.10536 8.73478 8 9 8H17C17.2652 8 17.5196 8.10536 17.7071 8.29289C17.8946 8.48043 18 8.73478 18 9C18 9.26522 17.8946 9.51957 17.7071 9.70711C17.5196 9.89464 17.2652 10 17 10H10V17C10 17.2652 9.89464 17.5196 9.70711 17.7071C9.51957 17.8946 9.26522 18 9 18C8.73478 18 8.48043 17.8946 8.29289 17.7071C8.10536 17.5196 8 17.2652 8 17V9Z" fill="black" />
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__answer">
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="faq__card">
+              <div class="faq__question">
+                <h3 class="faq__question-text">How do I change my details?</h3>
+                <button class="faq__toggle" aria-label="Toggle answer">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C9.26522 0 9.51957 0.105357 9.70711 0.292893C9.89464 0.48043 10 0.734784 10 1V9C10 9.26522 9.89464 9.51957 9.70711 9.70711C9.51957 9.89464 9.26522 10 9 10H1C0.734784 10 0.48043 9.89464 0.292893 9.70711C0.105357 9.51957 0 9.26522 0 9C0 8.73478 0.105357 8.48043 0.292893 8.29289C0.48043 8.10536 0.734784 8 1 8H8V1C8 0.734784 8.10536 0.48043 8.29289 0.292893C8.48043 0.105357 8.73478 0 9 0Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 9C8 8.73478 8.10536 8.48043 8.29289 8.29289C8.48043 8.10536 8.73478 8 9 8H17C17.2652 8 17.5196 8.10536 17.7071 8.29289C17.8946 8.48043 18 8.73478 18 9C18 9.26522 17.8946 9.51957 17.7071 9.70711C17.5196 9.89464 17.2652 10 17 10H10V17C10 17.2652 9.89464 17.5196 9.70711 17.7071C9.51957 17.8946 9.26522 18 9 18C8.73478 18 8.48043 17.8946 8.29289 17.7071C8.10536 17.5196 8 17.2652 8 17V9Z" fill="black" />
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__answer">
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="faq__card">
+              <div class="faq__question">
+                <h3 class="faq__question-text">How do I change my details?</h3>
+                <button class="faq__toggle" aria-label="Toggle answer">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C9.26522 0 9.51957 0.105357 9.70711 0.292893C9.89464 0.48043 10 0.734784 10 1V9C10 9.26522 9.89464 9.51957 9.70711 9.70711C9.51957 9.89464 9.26522 10 9 10H1C0.734784 10 0.48043 9.89464 0.292893 9.70711C0.105357 9.51957 0 9.26522 0 9C0 8.73478 0.105357 8.48043 0.292893 8.29289C0.48043 8.10536 0.734784 8 1 8H8V1C8 0.734784 8.10536 0.48043 8.29289 0.292893C8.48043 0.105357 8.73478 0 9 0Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 9C8 8.73478 8.10536 8.48043 8.29289 8.29289C8.48043 8.10536 8.73478 8 9 8H17C17.2652 8 17.5196 8.10536 17.7071 8.29289C17.8946 8.48043 18 8.73478 18 9C18 9.26522 17.8946 9.51957 17.7071 9.70711C17.5196 9.89464 17.2652 10 17 10H10V17C10 17.2652 9.89464 17.5196 9.70711 17.7071C9.51957 17.8946 9.26522 18 9 18C8.73478 18 8.48043 17.8946 8.29289 17.7071C8.10536 17.5196 8 17.2652 8 17V9Z" fill="black" />
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__answer">
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="faq__card">
+              <div class="faq__question">
+                <h3 class="faq__question-text">How do I change my details?</h3>
+                <button class="faq__toggle" aria-label="Toggle answer">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C9.26522 0 9.51957 0.105357 9.70711 0.292893C9.89464 0.48043 10 0.734784 10 1V9C10 9.26522 9.89464 9.51957 9.70711 9.70711C9.51957 9.89464 9.26522 10 9 10H1C0.734784 10 0.48043 9.89464 0.292893 9.70711C0.105357 9.51957 0 9.26522 0 9C0 8.73478 0.105357 8.48043 0.292893 8.29289C0.48043 8.10536 0.734784 8 1 8H8V1C8 0.734784 8.10536 0.48043 8.29289 0.292893C8.48043 0.105357 8.73478 0 9 0Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 9C8 8.73478 8.10536 8.48043 8.29289 8.29289C8.48043 8.10536 8.73478 8 9 8H17C17.2652 8 17.5196 8.10536 17.7071 8.29289C17.8946 8.48043 18 8.73478 18 9C18 9.26522 17.8946 9.51957 17.7071 9.70711C17.5196 9.89464 17.2652 10 17 10H10V17C10 17.2652 9.89464 17.5196 9.70711 17.7071C9.51957 17.8946 9.26522 18 9 18C8.73478 18 8.48043 17.8946 8.29289 17.7071C8.10536 17.5196 8 17.2652 8 17V9Z" fill="black" />
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__answer">
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us" id="contact-us">
+        <div class="contact-us__container">
+          <div class="contact-us__content">
+            <div class="contact-us__header">
+              <h2 class="contact-us__title">Contact us!</h2>
+              <p class="contact-us__description">
+                The support staff and customer service are available to help you with any questions or needs you might have. Just drop us a line.
+              </p>
+              <p class="contact-us__text">
+                This site is owned and operated by Kode Tech Solutions LTD
+              </p>
+            </div>
+            <div class="contact-us__info">
+              <div class="contact-us__info-item">
+                <h4 class="contact-us__info-title">Phone:</h4>
+                <a href="tel:+442038857261" class="contact-us__text">442038857261</a>
+              </div>
+              <div class="contact-us__info-item">
+                <h4 class="contact-us__info-title">Email:</h4>
+                <a href="mailto:help@google.com" class="contact-us__text">
+                  help@google.com
+                </a>
+              </div>
+              <div class="contact-us__info-item">
+                <h4 class="contact-us__info-title">Address:</h4>
+                <a href="https://maps.app.goo.gl/3QEfA4uCTagY3iSj8" class="contact-us__text" target="_blank">
+                  Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic of the Marshall Islands, MH 96960
+                </a>
+              </div>
+            </div>
+          </div>
+          <form id="form" class="contact-us__form" novalidate>
+            <div class="contact-us__form-group">
+              <input type="text" name="name" id="form-name" class="contact-us__form-input" placeholder="Name">
+              <span class="error-message" id="name-error"></span>
+
+              <input type="email" name="email" id="form-email" class="contact-us__form-input" placeholder="Email">
+              <span class="error-message" id="email-error"></span>
+
+              <textarea name="message" id="form-message" class="contact-us__form-input" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" id="submit-btn" class="contact-us__form-submit signin-btn" disabled>Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <div class="logo">
+          <a href="#header">LOGO</a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#hero">About us</a></li>
+            <li><a href="#steps">Instructions</a></li>
+            <li><a href="#testimonial">Platforms</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#footer">Sign in</a></li>
+            <li><a href="#header">Sign up for free</a></li>
+          </ul>
+        </nav>
+        <div class="footer__info footer__info-risk">
+          <h4 class="footer__info-title">
+            Information and high risk warning:
+          </h4>
+          <p class="footer__info-text">
+            Trading with foreign exchange (FX), contract for differences (CFDs) and precious metals carries a high level of risk that may not be suitable for all investors. Leverage creates additional risk and loss exposure. Before you decide to trade foreign exchange or contract for differences, carefully consider your investment objectives, experience level, and risk tolerance.
+          </p>
+        </div>
+        <div class="footer__info footer__info-legal">
+          <h4 class="footer__info-title">
+            Legal disclaimer:
+          </h4>
+          <p class="footer__info-text">
+            Forex trading entails significant risks and is not appropriate for all investors. The possibility of incurring substantial losses should be taken into account. It is therefore important to understand the possible consequences of investing. Traders should weigh their earning potential against the risks involved and act accordingly. Interactive Trade Ltd operating under brand and using domenLink domain within the European Economic Area.
+          </p>
+        </div>
+        <p class="footer__copyright copyright-text">Copyright 2020, All Right Reserved</p>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list copyright-text">
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Risk Warnings</a></li>
+            <li><a href="#">Anti-Money Laundering</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

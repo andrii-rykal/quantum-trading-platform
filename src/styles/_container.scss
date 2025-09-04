@@ -1,0 +1,22 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include tablet {
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 30px ;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,177 @@
+@use "../variables" as *;
+@use "../container" as *;
+@use "../mixins" as *;
+
+.contact-us {
+  background-color: $contact-bg-mobile;
+  padding: 48px 0;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__content {
+    @include flex-column(17px);
+    margin-bottom: 48px;
+  }
+
+  &__header {
+    @include flex-column(24px);
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 110%;
+    color: $title-color;
+  }
+
+  &__description {
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+  }
+
+  &__text {
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+  }
+
+  &__info {
+    @include flex-column(16px);
+  }
+
+  &__info-item {
+    @include flex-column(8px);
+  }
+
+  &__info-title {
+    font-size: 15px;
+    line-height: 107%;
+    color: $title-color;
+  }
+
+  &__form {
+    position: relative;
+    border: 2px solid $btn-bg-default;
+    border-radius: 20px;
+    background-color: $color-white;
+    padding: 48px 16px;
+    @include flex-column(48px);
+    align-items: center;
+  }
+
+  &__form-group {
+    @include flex-column();
+    width: 100%;
+  }
+
+  .error-message {
+    font-size: 15px;
+    line-height: 107%;
+    color: $error-color;
+    height: 24px;
+    padding-top: 8px;
+  }
+
+  &__form-input {
+    border: 1px solid $btn-bg-disabled;
+    border-radius: 3px;
+    padding: 7px 16px;
+    height: 40px;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+
+    &.valid {
+      border-color: $success-color;
+    }
+
+    &.error {
+      border-color: $error-color;
+    }
+
+
+    &::placeholder {
+      font-family: $second-family;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 163%;
+      color: $placeholder-color;
+    }
+
+    &:focus {
+      border-color: $placeholder-color;
+    }
+  }
+
+  textarea {
+    height: 89px;
+  }
+
+  &__form-submit {
+    padding: 20px 64px;
+    font-size: 16px;
+    line-height: 88%;
+    letter-spacing: 0.03em;
+  }
+
+  @include tablet {
+    background-color: $contact-bg-desktop;
+
+    &__header {
+      gap: 32px;
+    }
+
+    &__title {
+      font-size: 56px;
+      line-height: 118%;
+      text-align: center;
+    }
+
+    &__content {
+      grid-column: 2 / -2;
+      gap: 24px;
+    }
+
+    &__form {
+      grid-column: 2 / -2;
+      border-color: $lines-color;
+      padding: 80px 40px;
+      gap: 40px;
+    }
+  }
+
+  @include desktop {
+    padding: 120px 0;
+    &__container {
+      align-items: center;
+    }
+
+    &__content {
+      grid-column: 1 / 6;
+      margin-bottom: 0;
+    }
+
+    &__description {
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__form {
+      grid-column: 7 / -1;
+      padding: 80px;
+      gap: 40px;
+    }
+
+    &__form-input {
+      width: 425px;
+    }
+  }
+}

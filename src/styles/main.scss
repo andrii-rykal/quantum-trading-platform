@@ -1,0 +1,28 @@
+@use "normalize" as *;
+@use "variables" as *;
+@use "fonts" as *;
+@use "container" as *;
+@use "mixins" as *;
+@use "components/header" as *;
+@use "components/button" as *;
+@use "components/hero" as *;
+@use "components/steps" as *;
+@use "components/testimonial" as *;
+@use "components/faq" as *;
+@use "components/contact-us" as *;
+@use "components/footer" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  font-weight: 700;
+  background-color: $color-white;
+  color: $text-color;
+  min-width: 320px;
+}
+
+
+
