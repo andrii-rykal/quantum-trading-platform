@@ -21,13 +21,13 @@ Modern multilingual landing page for a trading platform with responsive design a
 
 ## 🚀 Quick Start
 
-[Live Demo](https://)
+[Live Demo]( https://andrii-rykal.github.io/quantum-trading-platform/)
 
 ### Installation
 
 ```bash
 # Clone repository
-git clone [repository-url]
+git clone [https://github.com/andrii-rykal/quantum-trading-platform.git]
 cd quantum-trading-platform
 
 # Install dependencies
