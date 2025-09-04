@@ -4,7 +4,7 @@ export const testimonials = [
     role: "Director of Growth",
     quote:
       "This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.",
-    avatar: "/quantum-trading-platform/images/albert_abello.png",
+    avatar: "./images/albert_abello.png",
   },
   {
     name: "Sofia Lee",
