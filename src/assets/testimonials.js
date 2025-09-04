@@ -11,7 +11,7 @@ export const testimonials = [
     role: "Marketing Strategist",
     quote:
       "We saw a 4x increase in engagement after switching. It’s intuitive and powerful. We saw a 4x increase in engagement after switching. It’s intuitive and powerful.",
-    avatar: "./images/sofia_lee.png",
+    avatar: new URL("./images/sofia_lee.png", import.meta.url).href,
   },
   {
     name: "Carlos Mendes",
