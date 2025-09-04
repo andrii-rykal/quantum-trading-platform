@@ -14,7 +14,7 @@ function formatNumber(n) {
   return n.toString().padStart(2, "0");
 }
 
-function updateTestimonial(index) {
+export function updateTestimonial(index) {
   const t = testimonials[index];
   avatar.src = t.avatar;
   name.textContent = t.name;
