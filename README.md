@@ -1,6 +1,8 @@
 # Quantum Trading Platform
 
 Modern multilingual landing page for a trading platform with responsive design and interactive components.
+[Live Demo]( https://andrii-rykal.github.io/quantum-trading-platform/)
+
 
 ## 🚀 Features
 
@@ -21,7 +23,6 @@ Modern multilingual landing page for a trading platform with responsive design a
 
 ## 🚀 Quick Start
 
-[Live Demo]( https://andrii-rykal.github.io/quantum-trading-platform/)
 
 ### Installation
 
